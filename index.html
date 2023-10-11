@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Affiliate Sign-up</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="sign-up-container">
+            <h2>Affiliate Sign-up</h2>
+            <form id="affiliateForm">
+                <input
+                    type="text"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                />
+                <input
+                    type="text"
+                    id="lastName"
+                    placeholder="Last Name"
+                    required
+                />
+                <input type="email" id="email" placeholder="Email" required />
+                <input
+                    type="text"
+                    id="uniqueCode"
+                    placeholder="Unique Code"
+                    readonly
+                />
+
+                <label>
+                    <input type="checkbox" id="ageCheckbox" required />
+                    I am 18 years of age or older
+                </label>
+                <label>
+                    <input type="checkbox" id="citizenCheckbox" required />
+                    I am a US Citizen
+                </label>
+
+                <button type="button" id="generateCodeBtn">
+                    Generate Code
+                </button>
+                <button type="submit" id="signUpBtn" disabled>Sign Up</button>
+            </form>
+            <div id="errorMessages"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
